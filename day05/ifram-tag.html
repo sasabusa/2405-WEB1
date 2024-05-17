@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+            position: absolute;
+        }
+
+        #target-img{
+            position: absolute;
+            bottom: 170px;
+        }
+        .app1{
+            position: absolute;
+            bottom: 150px;
+        }
+        .app2{
+            position: absolute;
+            bottom: 130px;
+        }
+        #target-p{
+            position: absolute;
+            bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="a-tag.html" frameborder="1"></iframe><br>
+    <iframe src="../day04/img-tag.html" frameborder="1" target="_parent" width="500" height="400"></iframe><br>
+    <iframe src="a-tag.html" frameborder="1" target="_top"></iframe><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F69WBwbaZWc?si=uEJfRs4JyCA20msq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+   
+    <a href="../day04/img-tag.html" target="_blank">day04-img : 이전 작업으로 이동(_blank)</a><br>
+    <a href="tel:010-1234-1234" id="tel">Tel:010-1234-1234</a><br>
+    <a href="sms:010-1234-1234" id="sms">SMS(문자 보내기):010-1234-1234</a><br>
+    <a href="mailto:admin@gmail.com">메일 보내기</a><br>
+
+    <a href="#">임시링크(#)</a><br>
+    <br>
+    <a href="#target-img">ID img 태그로 이동</a><br>
+    <a href="#target-p">ID p 태그로 이동</a><br>
+
+    <p id="target-img">img tag</p>
+    <a class="app1" href="#tel">tel로 이동</a>
+    <a class="app2" href="#sms">sms로 이동</a>
+    <p id="target-p">p-tag</p><br>
+
+</html>
