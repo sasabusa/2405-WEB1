@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 초기화는 반드시 css  맨 위에 작성되어야 한다. -->
+    <link rel="stylesheet" href="../reset.css">
+</head>
+<body>
+    <!-- css 우선 순위 -->
+    <!-- 
+        규칙
+        - 나중에 선언된 것이 높은 우선 순위를 가진다.
+        - 작성 순서와 상관없이 tag < class < ID의 우선 순위를 가진다.
+        - 부모로부터 상속받은 속성은 우선 순위가 가장 낮다.
+        - 우선 순위가 같은 경우 부모-자식 관계가 많은 순서로 우선 순위를 가진다.
+
+        - !important : 가장 높은 우선 순위. but, 최후의 보루, 최대한 사용안하기.
+     -->
+
+     <p class="hi" id="hello">안녕하세요</p>
+
+     <p>안녕하세요. 저는 홍길동 <span class="자식"></span> 입니다.</p>
+
+
+
+
+</body>
+</html>
