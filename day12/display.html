@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            text-align: center;
+            line-height: 200px;
+            
+            /* 표 속성에서만 적용 가능 */
+            /* vertical-align: middle; */
+            
+            border: 1px solid black;
+        }
+
+        .box-block{
+            display: block;
+        }
+        .box-inline{
+            display: inline;
+        }
+        .box-inline-block{
+            display: inline-block;
+        }
+        .box-none{
+            /* display: none; */
+            /* visibility: hidden;  */
+
+            /* opacity: 0; */
+            /* 위 속성과 같은 작동을 하지만,
+            투명도는 0부터 1(100%)까지 값이 연결되기 때문에
+            애니메이션 효과 부여 가능.
+            visibility: hidden을 사용할 이유가 없다. */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-block">block</div>
+    <div class="box box-inline">inline</div>
+    <div class="box box-inline-block">inline-block</div>
+    <div class="box box-none">none</div>
+    <hr>
+</body>
+</html>
