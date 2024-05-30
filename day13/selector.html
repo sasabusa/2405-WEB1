@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .hi > .bye{
+            color : red;
+        }
+
+        .hi .bye{
+            color : pink;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        * : 전체 선택자. 초기화 용도로 사용한다.(margin:0, padding:0)
+        img : 태그 선택자. 특정 태그를 초기화 하는데에 사용(img{ display:block; } 등 )
+        #img-id : 아이디 선택자. 유니크한 값으로 높은 우선 순위를 가진다.
+        .img-class : 클래스 선택자. 일반적으로 가장 많이 사용하는 형태.
+    -->
+    <img id="img-id" class="img-class" src="address(sample)" alt="대체 텍스트">
+
+    <div class="container">
+        <div class="hi hello">hi hello
+            <div class="bye">bye</div>
+        </div>
+    </div>
+    <!--
+        후손 선택자 :       [ .container .bye ](0)   [.hi .bye](0)
+        자손(자식) 선택자 : [ .container > .bye ](x) [.hi > .bye](o)
+
+        후손,자손 선택자는 css를 구조적으로 만들어 줄 수 있는 반면,
+        남용하게되면 유지보수가 힘들어질 수 있으니, 너무 많은 단계를 쓴는 것은 지양.0
+
+        *[.hi.hello]
+
+        [ #img-id.img-class ]
+    -->
+    
+</body>
+</html>
