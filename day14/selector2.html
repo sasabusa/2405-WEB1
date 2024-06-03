@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .reaction-box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .reaction-box:hover{
+            background-color: green;
+        }
+
+        .reaction-box:active{
+            background-color: blue;
+        }
+
+        /* .reaction-container:hover h3{
+            background-color: yellow;
+        }
+        .reaction-container:hover p{
+            background-color: red;
+        } */
+
+        .reaction-container:hover>h3{
+            background-color: yellow;
+        }
+        .reaction-container:hover>p{
+            background-color: red;
+        }
+
+        /* .reaction-container:hover{
+            h3{
+                background-color: skyblue;
+            }
+            p{
+                background-color: lightcoral;
+            }
+        } */
+
+        input:enabled{
+            background: blue;
+            color: white;
+        }
+        input:disabled{
+            background: black;
+        }
+
+        input:focus{
+            background: orange;
+        }
+
+        .top{
+            width: 800px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .down{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 1px solid black;
+            margin-right: 10px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="reaction-box">
+        반응 선택자
+    </div>
+
+    <div class="reaction-container">
+        <h3>반응하는 제목</h3>
+        <p>반응하는 본문영역</p>
+    </div>
+
+    <h1>Enabled</h1>
+    <p>
+        <input type="text" />
+    </p>
+
+    <h1>Disabled</h1>
+    <p>입력을 할 수 없는 상태로 만들기</p>
+    <input disabled="disabled" />
+
+    <div class="top">
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+    </div>
+</body>
+</html>
